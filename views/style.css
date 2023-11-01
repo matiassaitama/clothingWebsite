@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif;
+}
+.hero{
+    width: 100%;
+   
+    padding: 10px 10%;
+    overflow: hidden;
+    position: static;
+    padding: 20px;
+    /*border: 1px solid #ccc;*/
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400; 
+}
+.login-btn{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #df4881, #c430d7);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+.content{
+    margin-top: 10%;
+    /*max-width: 600px;*/
+    padding: 20px;
+    /*border: 1px solid #ccc;*/
+}
+.content h1{
+    font-size: 70px;
+    color: #222;
+}
+.content p{
+    margin: 10px 0 30px;
+    color: #333;
+    animation-delay: 0.5s;
+}
+.content .btn{
+    padding: 15px 80px;
+    font-size: 15px;
+    animation-delay: 1s;
+}
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+.feature-img{
+    width: 500px;
+    position: static;
+    bottom: 0;
+    right: 10%;
+    
+}
+.feature-img.anim{
+    animation-delay: 1.5s;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}/*
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; /* Establece un ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.text-container {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna para la imagen y otra para el contenido */
+    gap: 20px;
+}
+.content-img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas, una para el contenido y otra para la imagen dentro del contenido */
+    gap: 20px; /* Espacio entre el contenido y la imagen */
+}
+body {
+    display: flex;
+    flex-direction: column; /* Para alinear verticalmente */
+    align-items: center; /* Para centrar horizontalmente */
+    justify-content: center; /* Para centrar verticalmente */
+    background-color: #43d8c767;
+    
+}
+.column {
+    text-align: center;
+}
+.full-width-image {
+    width: 100%; /* Establece el ancho al 100% del contenedor padre */
+    height: 800px; /* Ajusta la altura a la medida deseada */
+    object-fit: cover; /* Recortará la imagen para llenar el contenedor manteniendo la relación de aspecto */
+}
+.square-image{
+    width:800px;
+    height:800px;
+
+}
+.joint-containers{
+    width: 100%;
+    display: flex;
+}
+.left-container{
+    display: inline-block;
+}
+.right-container{
+    display: inline-block;
+}
+.imagen-contenedor {
+    display: flex;
+}
+
+.imagen-contenedor a {
+    flex: 1; /* Divide el espacio disponible en partes iguales */
+    overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño de la imagen */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.imagen-contenedor img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la relación de aspecto original de la imagen */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las imágenes */
+}
+.barra-gris {
+    background-color: #ccc; /* Color de la barra gris */
+    height: 25px; /* Altura de la barra gris */
+    width: 100%; /* Ancho que ocupa toda la pantalla */
+}
+
+.contenedor-negro {
+    background-color: #1d1d1d; /* Color de fondo negro */
+    color: #fff; /* Color del texto en el contenedor negro */
+    padding: 20px; /* Espaciado interno en el contenedor negro */
+    width: 100%;
+}
+.botones {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+.botones a {
+    display: inline-block;
+    background-color: #333; /* Color de fondo de los botones */
+    color: #fff; /* Color del texto de los botones */
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    margin: 5px; /* Espacio entre los botones */
+    text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+}
+.banner-catalogue{
+    width: 100%;
+    background-color: #333; /* Color de fondo del banner */
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 20px 0; /* Espaciado interno en el banner */
+}
