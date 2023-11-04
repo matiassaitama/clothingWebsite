@@ -9,7 +9,7 @@
    
     padding: 10px 10%;
     overflow: hidden;
-    position: static;
+    position: relative;
     padding: 20px;
     /*border: 1px solid #ccc;*/
 }
@@ -87,6 +87,9 @@ nav ul li a{
     transform: translateY(30px);
     animation: moveup 0.5s linear forwards;
 }
+.banner{
+ width: 100%;
+}
 @keyframes moveup{
     100%{
         opacity: 1;
@@ -140,13 +143,14 @@ body {
     object-fit: cover; /* Recortará la imagen para llenar el contenedor manteniendo la relación de aspecto */
 }
 .square-image{
-    width:800px;
-    height:800px;
+    width:90vh;
+    height:100%;
 
 }
 .joint-containers{
     width: 100%;
     display: flex;
+  
 }
 .left-container{
     display: inline-block;
